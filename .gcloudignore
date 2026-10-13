@@ -1,0 +1,15 @@
+# Archivo de exclusion de Cloud Build y gcloud
+.gcloudignore
+.git
+.gitignore
+.env
+.env.*
+venv
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache
+frontend/node_modules
+.DS_Store
+*.log

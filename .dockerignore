@@ -1,0 +1,15 @@
+# Exclusiones de construcción de Docker para optimizar el contexto de imagen
+.git
+.gitignore
+.env
+.env.*
+venv
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache
+frontend/node_modules
+frontend/dist
+.DS_Store
+*.log

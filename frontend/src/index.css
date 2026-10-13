@@ -1,0 +1,180 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Estilos globales y personalización visual Google Cloud Console */
+:root {
+  color-scheme: dark;
+}
+
+body {
+  background-color: #0B1326;
+  color: #F8FAFC;
+  overflow-x: hidden;
+}
+
+/* Barra de desplazamiento estilizada estilo Cloud Console */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0E172A;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2A385B;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #4285F4;
+}
+
+/* Efecto glassmorphic sutil */
+.glass-panel {
+  background: rgba(24, 34, 61, 0.75);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(42, 56, 91, 0.8);
+}
+
+.glass-panel-hover:hover {
+  border-color: rgba(66, 133, 244, 0.5);
+  box-shadow: 0 0 16px -2px rgba(66, 133, 244, 0.15);
+}
+
+/* Estilos de tipografía para el visor de documentos Markdown de Newsletters */
+.newsletter-markdown-body h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #FFFFFF;
+  margin-top: 1.25rem;
+  margin-bottom: 0.75rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #2A385B;
+}
+
+.newsletter-markdown-body h2 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #93C5FD;
+  margin-top: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.newsletter-markdown-body h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #E2E8F0;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.newsletter-markdown-body h4 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #CBD5E1;
+  margin-top: 0.75rem;
+  margin-bottom: 0.25rem;
+}
+
+.newsletter-markdown-body p {
+  margin-bottom: 0.85rem;
+  line-height: 1.7;
+  color: #E2E8F0;
+}
+
+.newsletter-markdown-body ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  margin-bottom: 0.85rem;
+  color: #E2E8F0;
+}
+
+.newsletter-markdown-body ol {
+  list-style-type: decimal;
+  padding-left: 1.5rem;
+  margin-bottom: 0.85rem;
+  color: #E2E8F0;
+}
+
+.newsletter-markdown-body li {
+  margin-bottom: 0.35rem;
+  line-height: 1.6;
+}
+
+.newsletter-markdown-body blockquote {
+  border-left: 3px solid #3B82F6;
+  padding-left: 1rem;
+  margin: 1rem 0;
+  color: #94A3B8;
+  font-style: italic;
+  background: rgba(14, 23, 42, 0.5);
+  border-radius: 0 0.5rem 0.5rem 0;
+  padding: 0.5rem 1rem;
+}
+
+.newsletter-markdown-body code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  background-color: #0A101D;
+  color: #6EE7B7;
+  padding: 0.15rem 0.4rem;
+  border-radius: 0.375rem;
+  font-size: 0.85em;
+  border: 1px solid #1E293B;
+}
+
+.newsletter-markdown-body pre {
+  background-color: #0A101D;
+  border: 1px solid #1E293B;
+  border-radius: 0.75rem;
+  padding: 1rem;
+  margin: 1rem 0;
+  overflow-x: auto;
+}
+
+.newsletter-markdown-body pre code {
+  background: transparent;
+  padding: 0;
+  border: none;
+  color: #E2E8F0;
+  font-size: 0.85rem;
+  line-height: 1.5;
+}
+
+.newsletter-markdown-body a {
+  color: #60A5FA;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.newsletter-markdown-body a:hover {
+  color: #93C5FD;
+}
+
+.newsletter-markdown-body hr {
+  border: none;
+  border-top: 1px solid #2A385B;
+  margin: 1.5rem 0;
+}
+
+.newsletter-markdown-body table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+  font-size: 0.85rem;
+}
+
+.newsletter-markdown-body th,
+.newsletter-markdown-body td {
+  border: 1px solid #2A385B;
+  padding: 0.5rem 0.75rem;
+  text-align: left;
+}
+
+.newsletter-markdown-body th {
+  background-color: #14203B;
+  color: #93C5FD;
+  font-weight: 600;
+}
